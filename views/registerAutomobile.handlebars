@@ -1,0 +1,42 @@
+<form class="register" action="/registerAutomobile" method="POST">
+    <div>
+        <div class="labels">
+            <label for="client">Selecione o cliente</label> <br/>
+            <select name="client">
+                {{#each client}}
+                    <option value="{{this.id}}">{{this.Name}} - {{this.CPF}}</option>
+                {{/each}}
+            </select> <br/>
+        </div>
+        <div class="labels">
+            <label for="model">Modelo</label><br />
+            <input type="text" name="model"/><br/>
+        </div>
+        <div class="labels">
+            <label for="plate">Placa</label><br />
+            <input type="text" name="plate"/><br/>
+        </div>
+        <div class="labels">
+            <label for="brand">Marca</label><br />
+            <input type="text" name="brand"/><br/>
+        </div>
+        <div class="labels">
+            <label>Tipo de veículo</label> <br/>
+            <select name="type">
+                <option value="">Selecione</option>
+                <option value="motorcycle">Moto</option>
+                <option value="car">Carro</option>
+            </select>
+        </div>
+        
+        
+        
+    </div>
+    <input type="submit" value="Enviar"/>
+    
+</form>
+
+
+<!--- 
+RF1 - Cadastrar veículo (Modelo, Marca, Placa, Tipo)
+-->

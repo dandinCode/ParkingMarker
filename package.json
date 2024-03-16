@@ -1,0 +1,19 @@
+{
+  "name": "parkingmarker",
+  "version": "1.0.0",
+  "description": "projeto para marcar o tempo de veículos parados em um determinado estacionamento, contabilizando o valor o preço a ser pagado.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost:8080"
+  },
+  "author": "caio-fb",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.6.3",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.34.0"
+  }
+}

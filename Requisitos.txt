@@ -1,0 +1,21 @@
+Requisitos funcionais
+
+RF1 - Cadastrar veículo (Modelo, Marca, Placa, Tipo)
+RF2 - Cadastrar dono do veículo (Nome, Telefone, Endereço, CPF)
+RF3 - Contabilizar tempo desde o cadastro
+RF4 - Parar contagem
+RF5 - Excluir veículo
+RF6 - Visualizar todos os veículo, com seus respectivos tempos
+RF7 - Visualizar individualmente os dados de cada veículo/dono
+
+
+Requisitos não funcionais
+
+RNF1 - Todos os dados devem ser registrados no banco de dados com o uso do Sequelize
+RNF2 - A visualização dos dados de veículo e carro devem ser feitas a partir de templates gerados pelo handlebars
+
+
+Regras de negócio:
+
+RN1 - Carros pagam 8.30 a hora
+RN2 - Motos pagam 5.50 a hora

@@ -1,0 +1,12 @@
+<h1>Bem vindo ao Parking Marker</h1>
+
+{{#each automobile}}
+    <div class="cards">
+        <div class="card">
+            <h3 class="card-title">{{this.Model}} - {{this.Brand}}</h3>
+            <p class="card-text">{{this.Plate}}</p>
+            <p class="saberMais" ><a href="/automobilesData/{{this.ClientId}}">Saber mais</a></p>            
+        </div>
+    </div>
+{{/each}}
+

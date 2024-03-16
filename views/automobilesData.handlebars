@@ -1,0 +1,36 @@
+<h1>Dados do veículo</h1>
+
+<div class="dadosDoVeiculo">
+    <div class="grid">
+
+    
+    {{#with client}}
+        <div>
+            <p>Dono: {{this.Name}}</p>
+            <p>CPF: {{this.CPF}}</p>
+            <p>Telefone para contato: {{this.Telephone}}</p>
+            <p>Endereço para cobrança: {{this.Address}}</p>
+        </div>
+    {{/with}}
+
+    <p>Estacionou na data: {{date}} </p>
+    <p>Horário: {{hour}} </p>
+
+
+    {{#with automobile}}
+        <div>
+            <p>Modelo: {{this.Brand}} {{this.Model}} </p>
+            <p>Placa: {{this.Plate}}</p>
+            
+        </div>
+        <div>
+        
+            <a href="/viewTime/{{this.ClientId}}" >{{this.clientId}}Ver Tempo</a>
+            
+            <form action="/delete/{{this.ClientId}}" method="POST">
+                <input class="btn" type="submit" value="Excluir" />
+            </form>
+        </div>
+    {{/with}}
+    </div>
+</div>
